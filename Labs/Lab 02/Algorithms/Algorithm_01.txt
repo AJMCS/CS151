@@ -1,0 +1,22 @@
+Author: AJ McDaniel
+Date: 2025-03-29
+
+
+ALGORITHM 01
+purpose: Algorithm to calculate change from a vending machine with least number of coins.
+
+input: price of item, amount paid
+output: number of quarters, dimes, nickels, and pennies
+
+
+Step 1: Calculate the change due by taking the amount paid and subtracting the price of the item.
+
+Step 2: Calculate the number of maximum number of quarters that can be used to make the change by
+using the modulus operator of 25 on the change due. 
+
+Step 3: Save the remainder of the change due after the quarters have been calculatedas the new value of change due.
+
+Step 4: Repeat steps 2-3 for dimes, nickels (where dimes you use modulus of 10 and nickels you use modulus of 5).
+The remainder of the change due after the dimes and nickels have been calculated will be the number of pennies.
+
+Step 5: Output the number of quarters, dimes, nickels, and pennies.

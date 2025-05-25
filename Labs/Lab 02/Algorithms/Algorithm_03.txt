@@ -1,0 +1,18 @@
+Author: AJ McDaniel
+Date: 2025-03-29
+
+
+ALGORITHM 03
+purpose: Algorithm which determines if two strings are anagrams of each other.
+
+input: two strings
+output: true if the strings are anagrams, false otherwise
+
+
+Step 1: Check if the two strings are the same length. If they are not, return false.
+
+Step 2: Clean the strings by removing all non-alphabetic characters and converting them to lowercase.
+This can be accomplished by using the replace() function in the algorithm library to remove all
+non-alphabetic characters and the lower() function to convert the characters to lowercase.
+
+Step 3: Compare the sorted strings. If they are the same, return true. Otherwise, return false.

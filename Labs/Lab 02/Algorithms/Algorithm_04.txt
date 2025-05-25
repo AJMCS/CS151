@@ -1,0 +1,26 @@
+Author: AJ McDaniel
+Date: 2025-03-29
+
+
+ALGORITHM 04
+purpose: Algorithm to calculate Pi using the infinite series until a certain degree of accuracy is reached.
+
+input: degree of accuracy
+output: approximation of Pi
+
+
+Step 1: Initialize the approximation of Pi to 0.
+
+Step 2: Use the general formula for the infinite series to calculate Pi [Pi/4 = SUM((-1)^n / (2n + 1)) from n = 0 to infinity].
+
+Note:The bounds of the summation are given by the degree of accuracy. So we will write a while loop that will continue to add terms to the summation
+until the absolute value of the difference between the current term and the previous term is less than the degree of accuracy.
+
+Step 3: Add an additional term to the approximation of Pi.
+
+Step 4: Check if the absolute value of the difference between the current approximation and the previous approximation is less than the degree of accuracy.
+If it is, return the current approximation.
+
+Step 4: If it is not, repeat steps 3 and 4.
+
+Step 5: Return the approximation of Pi.

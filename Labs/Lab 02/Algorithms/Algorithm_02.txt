@@ -1,0 +1,24 @@
+Author: AJ McDaniel
+Date: 2025-03-29
+
+
+ALGORITHM 02
+purpose: An algorithm to determine the average amount of weight of all horses in the stable, 
+as well as the name and weight of the heaviest and lightest horse.
+
+input: name and weight of each horse in the stable
+output: average weight of all horses, name and weight of heaviest horse, name and weight of lightest horse
+
+
+Step 1: Initialize variables for the total weight, the number of horses, the heaviest horse, and the lightest horse.
+Initialze the name and weight of the heaviest horse and the lightest horse to the first horse in the stable.
+
+Step 2: For each horse in the stable, add the weight to the total weight and increment the number of horses. Also,
+check if the current horse is heavier than the heaviest horse or lighter than the lightest horse. If either is true,
+update the name and weight of the heaviest/lightest horse to the current horse.
+
+Step 3: After you have gone through all the horses, calculate the average weight of all horses by dividing the total
+weight by the number of horses.
+
+Step 4: Output the average weight of all horses, the name and weight of the heaviest horse, and the name and weight
+of the lightest horse.

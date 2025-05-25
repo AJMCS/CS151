@@ -1,0 +1,31 @@
+31. A derived class inherits all data members and all functions of its base class.     
+
+    - An outside class (not a child) can directly access public data members and public functions of another class.     
+    
+
+34. In the following line of code, the class's access specification to the base class is  (or is equivalent to)  public .
+  ```
+  class Pet : public Dog  
+  ```
+ 
+35.In the following line of code, the class's access specification to the base class is (or is equivalent to)  private .
+  ```
+  class Pet : Fish  
+  ```
+ 
+36. Protected members of the base class are like private members, except they may be accessed by derived class functions.
+
+37. In a base class with a private access modifier, if a base class member is public / protected / private, then access to it 
+by a derived class becomes private / private / inaccessible.
+
+38. In a base class with a protected access modifier, if a base class member is public / protected / private, then access to 
+it by a derived class becomes protected / protected / inaccessible.
+
+39. In a base class with a public access modifier, if a base class member is public / protected / private, then access to it 
+by a derived class becomes public / protected / inaccessible.
+
+40. When both a base class and a derived class have constructors, the base class constructor is run first.
+
+41. When both a base class and a derived class have destructors, the derived class destructor is run first.
+
+42. An overridden base class function may be called by a function in the derived class by using the scope resolution "::" operator.

@@ -1,0 +1,64 @@
+CheckPoint Questions
+Author: AJ McDaniel
+Date: 4/3/2025
+
+
+10.2  Write a statement defining a variable named  dPtr.  The variable should be a pointer to a  double.
+
+    double* dPtr;
+
+
+10.3  List three uses of the  *  symbol in C++.
+
+    1. To declare a pointer
+    2. To dereference a pointer
+    3. Multiplication operator
+
+
+10.4  What is the output of the following program?
+
+    The output will be: 350 5 25
+
+
+10.5  Rewrite the following loop so it uses square bracket notation (with  [  and  ] ) instead of the indirection operator.
+
+    for (int x = 0; x < 30; x++)
+    cout << array[x] << endl;
+
+10.6  Assume  ptr  is a pointer to an  int  and holds the memory address (decimal)  4950.  On a system with 4-byte integers, 
+what address will be in  ptr  (in decimal) after the following statement?
+
+    Statement: ptr += 12;
+
+    12 * 4 = 48
+    4950 + 48 = 4998
+
+    The address will be 4998.
+
+
+10.7  Assume  ptrInt  is a pointer to an  int,  and  ptrDouble  is a pointer to a  double.  Both have previously been 
+assigned values.  For each of the following statements, determine whether the statement is valid or invalid.  For those 
+that are invalid, explain why.
+
+    a) Valid cause it increments the pointer to the next int in memory.
+    b) Valid. It decrements the pointer to the previous int in memory.
+    c) Invalid. The pointers are different data types so you cannot subtract them.
+    d) Invalid. The pointers are different data types so you cannot add them.
+    e) Valid. x is an int so the variable and pointer have the same data type and can be incrememented.
+    f) Invalid. pointer arithmetic only involves addition and subtraction, you cannot multiply or divide pointers.
+
+
+34. Consider the function:
+  void modify(int &x) {  
+      x = 10 ; 
+  } 
+ 
+Show how to call the  modify  function so that it sets the integer defined below to 10 in the calling function:
+ 
+  int i ;
+  <call "modify" function to set i to 10> 
+
+answer:
+
+  int i;
+  modify(i);

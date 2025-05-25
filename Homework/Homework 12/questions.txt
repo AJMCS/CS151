@@ -1,0 +1,25 @@
+Author: AJ McDaniel
+Homework 12 Questions:
+
+2. A member function of a base class which is not completely implemented (only the function header is provided) 
+so that all concrete descendant classes must implement that function is called a(n) abstract function.
+
+4. To use dynamic binding, a member function of a class needs to be declared as a(n) virtual function.
+
+6. Dynamic binding takes place at run time.
+
+8. An object referenced by a base class pointer needs to be cast to be assigned to a derived class pointer.
+
+13. The keyword final prevents a member function from being overridden in a descendant class.
+
+14. To have the compiler check that a member function in a child overrides a virtual member function in the 
+parent, you should use the keyword override after the function declaration in the child class.
+
+15. No, it will not because Animal is an abstract class and cannot be instantiated.
+
+16. Yes, it will because Cat is a concrete child class derived from Animal, and a pointer to Animal 
+can point to a Cat object.
+
+17. Yes, it will for the same reason the Cat object will compile
+
+18. No, because you cannot instantiate an abstract class.

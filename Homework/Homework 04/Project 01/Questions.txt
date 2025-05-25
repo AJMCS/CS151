@@ -1,0 +1,26 @@
+22. What is the difference between a pointer to a constant and a constant pointer?
+    Answer: 
+    A pointer to a constant can change where the pointer points to, but not the value of the pointer itself.
+    A constant pointer can't change where the pointer points, but can change the value of the pointer itself.
+
+
+24. Show C++ code for defining a variable ptr that is a constant pointer to an int.
+    Answer:
+    int x = 1;
+    int* const ptr = &x;
+
+
+26. Name the header file that needs to be included in a program that uses smart pointers.
+    Answer:
+    #include <memory>
+
+
+28. What does the get() function of the unique_ptr class do?
+    Answer:
+    The get() function returns the raw pointer of the same data type as the object calling the function.
+
+
+30. Besides pointer arithmetic (operators ++, ––, +, –, *, /, etc.) describe two types of operations that are permitted on raw pointers but not on  unique_ptr  objects.
+    Answer:
+    - you can copy raw pointers to new declared pointer.
+    - you can cast raw pointers to other types using static_cast.

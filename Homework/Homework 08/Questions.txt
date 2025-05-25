@@ -1,0 +1,25 @@
+Author: AJ McDaniel
+Date: 4/25/2025
+
+1. A(n)  C-string  is represented in memory as an array of characters with a null terminator.
+2. The  C-string  header is required before the library of C-string functions can be used in a program.
+4. The type  const char*  is used by the compiler as the type of a literal such as  "abcde".
+a. The  strlen  function returns the length of a C-string.
+b. The  stoi  function returns the value of a string (object) converted to an integer.
+c. The  atoi  function returns the value of a C-string converted to an integer. 
+d. The  to_string  function converts an integer to a string. 
+e. The  strcpy  function copies one C-string to another.
+f. The  strcat  function concatenates one C-string to another. 
+g. Write a function whose prototype is:
+    char lastChar(const char *str)  
+    and which takes a non-empty C-string as a parameter and returns the last character in the string.  For example, the expression  lastChar("abc")  would return the character  'c'.  Do not use a  string  or functions in the  string  class.
+
+```
+char lastChar(const char *str) {
+    int i = 0;
+    while (str[i + 1] != '\0') {
+        i++;
+    }
+    return str[i];
+}
+```

@@ -1,0 +1,30 @@
+Assignment: Homework 01 - Questions.
+Author: AJ McDaniel
+
+8. If a numeric array is partially initialized, the uninitialized elements will be set to zero.
+
+20. When you pass the name of an array as an argument to a function, you are actually passing a 
+pointer to the first element of the array.
+
+22. Given the following array definition:
+
+  ```int values[5] = {4,7,6, 8, 2 }; ```
+
+The code below displays: 2 14 7
+
+  ```cout << values[4] << "  "<< (values[2] + values[3]) << "  " << ++values[1] << endl;```
+
+32. The arrays  array1  and  array2  each hold 25 integer elements.  The following code is designed 
+to show the total the values in each of two arrays array1  and  array2.  Will the code print the 
+correct total for each array?  Explain why or why not.  You can assume that the values of  array1  
+and  array2  have been initialized.
+
+  ```*didn't bother to copy it*```
+
+The answer is no. The reason being is that there is a scope issue with the variable called total. 
+Since total exists outside of either of the for-loops the data collected from the furst for-loop 
+will persist even after its done executing. by the time the second for loop is done, what is 
+printed to the console will be the sum of both array2 and array1, not array2 by itself. 
+
+To fix this issue, you would need to either create seperate variables for each for-loop or you would 
+need to zero-out the existing total variable to begin counting from scratch.

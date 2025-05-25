@@ -1,0 +1,40 @@
+Questions:
+
+10. The function:
+```
+void printSecond(ListNode *ptr) {
+    if (ptr == nullptr || ptr->next == nullptr) {
+        cout << "Error: List has fewer than 2 nodes." << endl;
+        exit(1);  // Terminates the program
+    }
+    cout << ptr->next->value << endl;
+}
+```
+
+12. The function:
+```
+ListNode* removeFirst(ListNode *ptr) {
+    if (ptr == nullptr) {
+        return nullptr;  // Empty list
+    }
+    ListNode* newHead = ptr->next;  // Save next node
+    delete ptr;  // Deallocate the original head
+    return newHead;  // Return new head of list
+}
+```
+
+14. The function:
+```
+ListNode *p = new ListNode(56.4);
+p = new ListNode(34.2, p);
+cout << (*p).value << endl << p->value;
+```
+
+16. The function:
+```
+ListNode *p = new ListNode(56.4, new ListNode(31.5));
+ListNode *q = p;
+while (q->next != nullptr)
+    q = q->next;
+cout << q->value;   
+```

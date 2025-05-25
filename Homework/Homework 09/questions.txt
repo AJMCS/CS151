@@ -1,0 +1,52 @@
+Author: AJ McDaniel
+Date: 4/15/2025
+Homework 9 Questions:
+
+4. The fstream header file is required for file I/O operations.
+5. The three file stream data types are ifstream, ofstream, and fstream.
+8. The fstream file stream data type is for output files, input files, and files that perform both input and output.
+18. The eof member function reports when the end of a file has been reached.
+22. Binary files which contain data that is unformatted and not necessarily stored as ASCII text.
+26. The write member function writes "raw" binary data to a file.
+
+39. Pseudocode for determining the number of bytes in a file:
+```
+Open the file for reading
+Set byteCount = 0
+While not end of file:
+    Read a block of N bytes from the file (N is a reasonable buffer size, e.g., 1024)
+    If less than N bytes are read, add the number of bytes read to byteCount and break
+    Else, add N to byteCount
+Close the file
+Return byteCount
+```
+
+40. Pseudocode for comparing two binary files for identical contents:
+```
+Open file1 and file2 for reading
+While neither file has reached end:
+    Read a block of N bytes from file1
+    Read a block of N bytes from file2
+    If the number of bytes read from file1 != number from file2, files are different
+    Compare the bytes read from both files
+    If any byte differs, files are different
+If both files reach end at the same time, files are identical
+Else, files are different
+Close both files
+```
+
+41. Pseudocode for reversing the content of one file into another:
+```
+Open source file for reading
+Open destination file for writing
+Determine the size of the source file by reading through it and counting bytes
+Let fileSize = total number of bytes
+Set buffer size N (as much as memory allows)
+For position = fileSize - N down to 0, step -N:
+    Seek to position in source file
+    Read up to N bytes or only remaining bytes if less than N remain
+    Write these bytes in reverse order to the destination file
+If any bytes remain at the start,
+    Seek to start, read remaining bytes, write them in reverse order
+Close both files
+```

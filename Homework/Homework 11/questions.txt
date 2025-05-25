@@ -1,0 +1,23 @@
+Author:AJ McDaniel
+Date: 4/23/2025
+Homework 11 Questions
+
+7.
+    a. The output of program A is: 36.
+    
+    b. The output of program B is:
+    ```
+     ********
+     *******
+     ******
+     *****
+     ****
+     ***
+     **
+     *
+    ```
+
+    c. The output of Program C is:
+    ```
+    airemulP ,ikabusT ,aittesnioP ,esoR
+    ```

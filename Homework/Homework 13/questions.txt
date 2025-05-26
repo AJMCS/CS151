@@ -1,0 +1,18 @@
+2. The  try  block should enclose code that directly or indirectly might cause an exception to be thrown.
+
+4. When writing function or class templates, you use a(n)  template parameter  to specify a generic data type.
+
+7. Containers (data structures) which organize data in a successive and continuous fashion similar to an 
+array or a list are known as sequential containers.
+
+8. Containers (data structures) which use keys to access elements such as a set or map are known as associative containers.
+
+12. Write a function template that is capable of adding any two numeric values of the same data type and 
+returning the result.
+
+```
+template <typename T>
+T add(T a, T b) {
+    return a + b;
+}
+```
